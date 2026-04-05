@@ -8,11 +8,30 @@
 </head>
 <body>
     <h1>Mood Tracker</h1>
-    <div class="mood-options"></div>
+    <div id="first-mood-options">
+        <button id="happy">🙂 Happy</button>
+        <button id="neutral">😐 Neutral</button>
+        <button id="sad">☹️ Sad</button>
+    </div>
+    <div id="second-mood-options"></div>
+
+    <div id="note-section"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
 
 <!-- Notes:
-    What I want to do, just for making it cool, is to get an API alongside this that catergorises emojis that the user enteres in and then I will be able to keep track of the moods that the user is in, and put that in a calendar-like format. Not too sure if I want the user to enter an emoji or if I want to have a whole list of emojis that the user can choose from. But I think it would be more efficient for the user to click an emoji rather than having to type it in, even though that might be a bit of a hassle to set up.
+    What I want to do, is that the user clicks an emoji on the screen, then has more options of "digging a little deeper", then has an option to write a note about their mood, or just hit save, and then the app will save the mood and note to localStorage most likely, and then the user can view their mood history. In the option where the user writes about their mood, I need a text box to type in obviously, but also a few options, probably fancy checkboxes, to select the reason for their mood .i.e. work, school, family, etc. Not too sure if I want the history to show a calendar view, or just a list would be a better option, in terms of minimizing brain numbing code, even though a calendar view might be more visually effective.
+
+    Checklist:
+    - [x] Create basic HTML structure with buttons for happy, neutral, and sad moods. ✔️
+    - [x] Add event listeners to the buttons to display more options when clicked. ✔️
+    - [x] Create arrays of options for each mood (e.g., happy could have "amused", "content", "excited", etc.). ✔️
+    - [x] Implement functionality to display the second set of options based on the first mood selection. ✔️
+    - [x] Add a text box for users to write notes about their mood.
+    - [x] Add checkboxes for users to select reasons for their mood (e.g., work, school, family).
+    - [x] Implement functionality to save the mood, note, and reasons to localStorage.
+    - [x] Create a view for users to see their mood history, either in a calendar format or a list.
+    - [x] Add a save button to the HTML file for saving mood and note data.
 -->
