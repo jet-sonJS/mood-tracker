@@ -1,26 +1,127 @@
-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    background-color: none; /*for now*/
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
 }
-button:hover {
-    background-color: #f3f1f1;
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #343a40;
 }
-button:focus {
-    outline: 3px solid #007BFF;
+
+#first-mood-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
-textarea {
+
+#second-mood-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#note-section {
+    display: none;
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#note-section textarea {
     width: 100%;
     height: 100px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
     padding: 10px;
-    font-size: 1em;
+    resize: vertical;
 }
-input[name="reason"] {
-    margin-right: 5px;
+
+#note-section div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
 }
-input[name="reason"]:checked {
-    background-color: #007BFF; /*for now*/
+
+#note-section label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+#note-section button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#note-section button:hover {
+    background-color: #0056b3;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .btn {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
